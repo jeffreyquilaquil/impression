@@ -1,0 +1,123 @@
+
+div#page-wrapper{
+	transition: margin-left .4s;
+}
+
+div#map, div#map-test{
+	display: block;
+	width: 100%;
+	height: 700px;
+}
+
+div#project-list-panel{
+	position: relative;
+	background: #ffffff;
+	padding-top: 20px;
+	margin-top: 0px;
+	padding-bottom: 100px;
+}
+
+div.map-filter-panel {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	
+	height: 700px;
+	
+	width: 280px;
+	z-index: 0;
+	border: 0;
+	padding: 0;
+	margin: 0;
+/*	
+	height: 100%;
+	bottom: 0px;
+*/
+	overflow: hidden;
+
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+	transition: width 0.4s;	
+}
+
+#filter-form{
+	position: relative;
+	display: inline-block;
+	min-height: 100%;
+}
+
+.record-list-panel .table-responsive{
+	background: #ffffff;
+}
+
+.map-filter-panel input, .map-filter-panel .form-control {
+	font-size: 11px;
+}
+
+.map-filter-panel, .map-filter-panel-header{
+	color: #777777;
+	background-color: #ffffff;
+}
+
+.map-filter-panel h1, .map-filter-panel h2, .map-filter-panel h3, .map-filter-panel h4, .map-filter-panel h5, .map-filter-panel h6{
+	color: #ffc926;
+}
+
+.filter-panel-wrapper{
+	width: 280px;
+}
+
+.filter-panel-title{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.filter-panel-btn-open{
+	position: absolute;
+	top: 60px;
+	left: 8px;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	border: 0;
+}
+
+.filter-panel-btn-close{
+	/* box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4); */
+
+}
+
+div.filter-panel-header{
+	display: block;
+	vertical-align: middle;
+}
+
+div.filter-panel-section{
+	padding: 10px;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+div.filter-checkbox{
+	/*border-width: 1px;
+	border-style: solid;
+	border-color: #ffffff;
+	*/
+}
+
+div.filter-checkbox label{
+	/*border-width: 1px;
+	border-style: solid;
+	border-color: #00ff00;
+	*/
+}
+
+@media only screen and (max-width: 319px){
+	.map-filter-panel{
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 320px){
+	.map-filter-panel{
+		width: 280px;
+	}
+}
